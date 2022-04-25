@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "beermod:block/mars_block"
+    }
+  }
+}

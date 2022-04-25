@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "radio_ingot",
+  "ingredients": [
+    {
+      "item": "beermod:radio_block"
+    }
+  ],
+  "result": {
+    "item": "beermod:radio_ingot",
+    "count": 9
+  }
+}

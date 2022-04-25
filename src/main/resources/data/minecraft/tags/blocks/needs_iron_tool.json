@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "beermod:mars_block",
+    "beermod:radio_ore",
+    "beermod:radio_block"
+  ]
+}
