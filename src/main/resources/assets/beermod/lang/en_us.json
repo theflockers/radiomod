@@ -1,7 +1,22 @@
 {
     "item.beermod.beer_can": "Beer Can",
-    "item.beermod.radio_shard": "Radio Shard",
     "block.beermod.mars_block": "Mars Block",
     "block.beermod.radio_ore": "Radio Ore",
-    "block.beermod.radio_block": "Radio Block"
+     
+    "item.beermod.radio_shard": "Radio Shard",
+    "item.beermod.radio_block": "Radio Block",
+    "item.beermod.radio_ingot": "Radio Ingot",
+
+    "item.beermod.radio_pickaxe": "Radio Pickaxe",
+    "item.beermod.radio_axe": "Radio Axe",
+    "item.beermod.radio_shovel": "Radio Shovel",
+    "item.beermod.radio_sword": "Radio Sword",
+    "item.beermod.radio_hoe": "Radio Hoe",
+
+    "item.beermod.radio_helmet": "Radio Helmet",
+    "item.beermod.radio_chestplate": "Radio Chestplate",
+    "item.beermod.radio_leggings": "Radio Leggings",
+    "item.beermod.radio_boots": "Radio Boots"
+
+
 }

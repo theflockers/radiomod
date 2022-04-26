@@ -34,7 +34,7 @@ public class BeerModBlocks {
     public static final RegistryObject<Block> RADIO_BLOCK =
         BLOCKS.register("radio_block", () -> 
                 new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(2, 6)
+                    .strength(5, 15)
                     .requiresCorrectToolForDrops()
                     .lightLevel((state) -> 16)));
 
