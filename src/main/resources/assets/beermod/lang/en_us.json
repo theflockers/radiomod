@@ -16,7 +16,11 @@
     "item.beermod.radio_helmet": "Radio Helmet",
     "item.beermod.radio_chestplate": "Radio Chestplate",
     "item.beermod.radio_leggings": "Radio Leggings",
-    "item.beermod.radio_boots": "Radio Boots"
+    "item.beermod.radio_boots": "Radio Boots",
+
+    "advancements.radio_armor.title": "Chernobyl",
+    "advancements.radio_armor.description": "Get a full suit of radioactive armor"
+
 
 
 }

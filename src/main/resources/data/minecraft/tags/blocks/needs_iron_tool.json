@@ -3,6 +3,7 @@
   "values": [
     "beermod:mars_block",
     "beermod:radio_ore",
-    "beermod:radio_block"
+    "beermod:radio_block",
+    "beermod:deepslate_radio_ore"
   ]
 }

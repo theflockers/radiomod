@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
@@ -11,6 +12,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
+import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
@@ -24,12 +26,16 @@ public class BeerMod {
 
     public BeerMod()
     {
-        MinecraftForge.EVENT_BUS.register(this);
+    	IEventBus eb = FMLJavaModLoadingContext.get().getModEventBus();
         LOGGER.info("*** Registering ITEMS ***");
-        BeerModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        BeerModItems.ITEMS.register(eb);
         LOGGER.info("*** Registering BLOCKS ***");
-        BeerModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
-        BeerModBlocks.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        BeerModBlocks.register(eb);
+        BeerModBlocks.ITEMS.register(eb);
+        
+        MinecraftForge.EVENT_BUS.register(this);
+
+        
     }
     @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class RegistryEvents

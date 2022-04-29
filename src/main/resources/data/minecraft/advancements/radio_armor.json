@@ -1,0 +1,56 @@
+{
+  "parent": "minecraft:recipes/root",
+  "display": {
+    "icon": {
+      "item": "beermod:radio_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.radio_armor.title"
+    },
+    "description": {
+      "translate": "advancements.radio_armor.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 1000
+  },
+  "criteria": {
+    "radio_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beermod:radio_helmet"
+            ]
+          },
+          {
+            "items": [
+              "beermod:radio_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "beermod:radio_leggings"
+            ]
+          },
+          {
+            "items": [
+              "beermod:radio_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "radio_armor"
+    ]
+  ]
+}

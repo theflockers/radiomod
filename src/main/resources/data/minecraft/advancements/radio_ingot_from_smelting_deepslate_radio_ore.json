@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "beermod:radio_ingot_from_smelting_deepslate_radio_ore"
+    ]
+  },
+  "criteria": {
+    "has_deepslate_radio_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beermod:deepslate_radio_ore"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "beermod:radio_ingot_from_smelting_deepslate_radio_ore"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_deepslate_radio_ore",
+      "has_the_recipe"
+    ]
+  ]
+}
